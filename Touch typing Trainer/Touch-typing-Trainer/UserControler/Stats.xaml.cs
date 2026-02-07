@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace Touch_typing_Trainer;
 
@@ -9,10 +10,9 @@ public partial class Stats : UserControl
     {
         InitializeComponent();
     }
+    
+    
 
-    private void ZuStart_OnClick(object sender, RoutedEventArgs e)
-    {
-        var main = (TouchTypingTrainer)Application.Current.MainWindow;
-        main.Navigate(new StartPage());
-    }
+    
+    
 }

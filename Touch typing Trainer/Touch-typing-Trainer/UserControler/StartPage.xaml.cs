@@ -33,4 +33,9 @@ public partial class StartPage : UserControl
         var main = (TouchTypingTrainer)Application.Current.MainWindow;
         main.Navigate(new Training());
     }
+
+    private void ExitButton_OnClick(object sender, RoutedEventArgs e)
+    {
+        Window.GetWindow(this).Close();
+    }
 }

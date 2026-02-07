@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:Touch_typing_Trainer"
         mc:Ignorable="d"
         Title="Touch typing Trainer" Height="450" Width="800">
+        
     <Grid>
         <ContentControl Name="MainContent"></ContentControl>
     </Grid>

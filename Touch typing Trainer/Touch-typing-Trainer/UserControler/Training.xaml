@@ -5,30 +5,30 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:Touch_typing_Trainer"
              mc:Ignorable="d"
-             d:DesignHeight="450" d:DesignWidth="800"
+             d:DesignHeight="500" d:DesignWidth="800"
              Focusable="True"
              
              >
              
              
     
-    <Grid Background="White">
 
-        <TextBox x:Name="HiddenInput"
-                 Width="0" 
-                 Height="0"
-                 Opacity="0"
-                 TextChanged="HiddenInput_TextChanged"/>
+     
+            
+            
+            <StackPanel Margin="20">
+                <Label HorizontalAlignment="Center" FontSize="50" FontWeight="DemiBold">Text to Type:</Label>
+                <TextBlock Name="trainingText" Width="500" Height="200" FontSize="30" >
+                
+                
+                </TextBlock>
+                <Button Click="ButtonBase_OnClick" Style="{StaticResource DifficultyButtons}" Width="300">Choose another exercise!</Button>
+
+            </StackPanel>
+            
+
+        
         
     
-        <StackPanel Margin="20">
-            <TextBlock x:Name="ZielTextBlock" 
-                       FontSize="24"
-                       Text="Tippe hier..."/>
-                       
-            <TextBlock x:Name="InfoText"
-                       Margin="0,20,0,0"
-                       Text="Klicke hier und fang an zu tippen!"/>
-        </StackPanel>
-    </Grid>
+   
 </UserControl>

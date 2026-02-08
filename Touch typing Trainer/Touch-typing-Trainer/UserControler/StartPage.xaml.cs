@@ -16,23 +16,12 @@ public partial class StartPage : UserControl
         main.Navigate(new Stats());
     }
 
-    private void DifficultyMedium_OnClick(object sender, RoutedEventArgs e)
+    private void Choose_OnClick(object sender, RoutedEventArgs e)
     {
         var main = (TouchTypingTrainer)Application.Current.MainWindow;
         main.Navigate(new Training());
     }
-
-    private void DifficultyLow_OnClick(object sender, RoutedEventArgs e)
-    {
-        var main = (TouchTypingTrainer)Application.Current.MainWindow;
-        main.Navigate(new Training());
-    }
-
-    private void DifficultyHigh_OnClick(object sender, RoutedEventArgs e)
-    {
-        var main = (TouchTypingTrainer)Application.Current.MainWindow;
-        main.Navigate(new Training());
-    }
+    
 
     private void ExitButton_OnClick(object sender, RoutedEventArgs e)
     {

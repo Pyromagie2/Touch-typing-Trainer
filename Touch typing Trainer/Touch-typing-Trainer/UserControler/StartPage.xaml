@@ -16,9 +16,7 @@
                  
                  <StackPanel HorizontalAlignment="Center">
                      <Label HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" Margin="0,0,0,20">Touch Typing Trainer</Label>
-                     <Button Name="DifficultyLow" Style="{StaticResource DifficultyButtons}" Click="DifficultyLow_OnClick">Low</Button>
-                     <Button Name="DifficultyMedium" Click="DifficultyMedium_OnClick" Style="{StaticResource DifficultyButtons}">Medium</Button>
-                     <Button Name="DifficultyHigh" Style="{StaticResource DifficultyButtons}" Click="DifficultyHigh_OnClick">High</Button>
+                     <Button Name="DifficultyLow" Style="{StaticResource DifficultyButtons}" Click="Choose_OnClick">Choose a exercise!</Button>
                      <Button Name="ExitButton" Style="{StaticResource DifficultyButtons}" Click="ExitButton_OnClick">Exit</Button>
                      
                  

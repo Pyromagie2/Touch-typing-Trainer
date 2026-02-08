@@ -37,7 +37,9 @@ namespace Touch_typing_Trainer
             {
                 posisiton--;
                 var runTemp = trainingText.Inlines.ElementAt(posisiton) as Run;
+                var runTemp2 = trainingText.Inlines.ElementAt(posisiton+1) as Run;
                 runTemp.Background = Brushes.White;
+                runTemp2.Background = Brushes.White;
                 runTemp.Foreground = Brushes.Black;
                 e.Handled = true;
             }
@@ -135,14 +137,20 @@ namespace Touch_typing_Trainer
 
             if (run == null)
                 return;
-
+            if (posisiton == 1)
+            {
+                run.Background = Brushes.BurlyWood;
+            }
             if (currentCharacter == inputKey)
             {
                 run.Foreground = Brushes.Green;  
+                run.Background = Brushes.White;
+                
             }
             else
             {
-                run.Foreground = Brushes.Red;    
+                run.Foreground = Brushes.Red;
+                run.Background = Brushes.White;
             }
 
             posisiton++;

@@ -25,7 +25,7 @@
                 <Button Click="ButtonBase_OnClick" Style="{StaticResource DifficultyButtons}" Width="300">Choose another exercise!</Button>
 
             </StackPanel>
-            
+     
 
         
         
